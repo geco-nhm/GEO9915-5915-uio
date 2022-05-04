@@ -5,7 +5,8 @@
 ### Each group should choose a model species (see further down) and run both at a regional and global scale. Distribute (no pun intended) the model runs between participants
 
 
-setwd("C:/Users/Your/working/directory") ## Edit to your own path!
+path <- setwd("C:/Users/Your/working/directory") ## Edit to your own path!
+dir.create(file.path(path, "Data"), showWarnings = FALSE) # if not existing create subdirectory called Data
 # Install & load packages
 library(raster)
 library(rgbif)

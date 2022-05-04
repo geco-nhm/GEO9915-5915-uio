@@ -31,7 +31,8 @@ library(dismo)
 library(ecospat)
 
 # Load training data
-setwd("C:/Users/Your/working/directory") ##Edit to your own path to working dir
+path <- setwd("C:/Users/Your/working/directory") ##Edit to your own path to working dir
+dir.create(file.path(path, "Data"), showWarnings = FALSE)  # if not existing create subdirectory called Data
 load("Data/DM_tutorial_training_data") ### remember to change the name if necessary to use the pre-made output files
 
 # View top and bottom of data
